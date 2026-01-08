@@ -5,7 +5,7 @@ import (
 	"net"
 	"testing"
 
-	svc "github.com/cherkasoov/task-6/internal/wifi"
+	svc "github.com/cherkasoov/internal/wifi"
 	"github.com/mdlayher/wifi"
 	"github.com/stretchr/testify/require"
 )
