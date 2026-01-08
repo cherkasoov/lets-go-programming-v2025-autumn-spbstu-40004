@@ -1,3 +1,18 @@
 package main
 
-func main()
+import (
+	"fmt"
+
+	"github.com/cherkasoov/task-8/internal/config"
+)
+
+func main() {
+	cfg, err := config.Load()
+	if err != nil {
+		fmt.Println("load config error: %w", err)
+
+		return
+	}
+
+	fmt.Print(cfg.Environment, " ", cfg.LogLevel)
+}
